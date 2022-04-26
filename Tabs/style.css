@@ -1,0 +1,35 @@
+body {
+  background: rgb(104, 119, 114);
+}
+
+.parent-tab {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.parent-tab input[type="radio"] {
+  display: none;
+}
+
+.parent-tab label {
+  padding: 15px;
+  background-color: rgb(189, 187, 187);
+}
+
+.parent-tab .child-tab {
+  width: 100%;
+  padding: 30px;
+  background: white;
+  order: 1;
+  display: none;
+}
+
+.parent-tab input[type="radio"]:checked + label + .child-tab {
+  display: block;
+}
+
+.parent-tab input[type="radio"]:checked + label {
+  background: white;
+}

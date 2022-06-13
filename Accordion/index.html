@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="contextBx">
+        <div class="label">Item 1</div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            veritatis incidunt fugit repudiandae quis esse iste, consequatur
+            laboriosam ipsam doloribus. Explicabo officiis dolores rem sint
+            incidunt fugit ipsum corrupti ratione.
+          </p>
+        </div>
+      </div>
+      <div class="contextBx">
+        <div class="label">Item 2</div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            veritatis incidunt fugit repudiandae quis esse iste, consequatur
+            laboriosam ipsam doloribus. Explicabo officiis dolores rem sint
+            incidunt fugit ipsum corrupti ratione.
+          </p>
+        </div>
+      </div>
+      <div class="contextBx">
+        <div class="label">Item 3</div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            veritatis incidunt fugit repudiandae quis esse iste, consequatur
+            laboriosam ipsam doloribus. Explicabo officiis dolores rem sint
+            incidunt fugit ipsum corrupti ratione.
+          </p>
+        </div>
+      </div>
+      <div class="contextBx">
+        <div class="label">Item 4</div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            veritatis incidunt fugit repudiandae quis esse iste, consequatur
+            laboriosam ipsam doloribus. Explicabo officiis dolores rem sint
+            incidunt fugit ipsum corrupti ratione.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const accordion = document.getElementsByClassName("contextBx");
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>

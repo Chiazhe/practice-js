@@ -16,6 +16,7 @@ body {
 .parent-tab label {
   padding: 15px;
   background-color: rgb(189, 187, 187);
+  cursor: pointer;
 }
 
 .parent-tab .child-tab {

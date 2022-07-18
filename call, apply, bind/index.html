@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function x(location1, location2) {
+        console.log(
+          this.firstName +
+            " " +
+            this.lastName +
+            " from " +
+            location1 +
+            " " +
+            location2
+        );
+      }
+
+      let person1 = {
+        firstName: "Steve",
+        lastName: "Roger",
+      };
+      let person2 = {
+        firstName: "Black",
+        lastName: "Panther",
+      };
+
+      x.call(person1, "Captain", "America");
+      x.apply(person2, ["Wakanda", "Forever"]);
+      let f1 = x.bind(person1, "Captain", "America");
+      f1();
+    </script>
+  </body>
+</html>
